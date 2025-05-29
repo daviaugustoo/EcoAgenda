@@ -71,11 +71,11 @@ Este documento agrega:
 
 #### Diagrama de Casos de Uso
 
-![Diagrama de Casos de Uso](Artifacts/png/Caso de uso.png)
+![Diagrama de Casos de Uso](Artifacts/png/Caso%20de%20uso.png)
 
 ### 2.3 Diagrama de Sequência do Sistema e Contrato de Operações
 
-![Diagrama de Sequência](Artifacts/png/Diagrama de arquitetura.png)
+![Diagrama de Sequência](Artifacts/png/Diagrama%20de%20sequencia.png)
 
 #### Contrato de Operação
 
@@ -92,45 +92,45 @@ O sistema utiliza arquitetura em três camadas: apresentação (web/mobile), ló
 
 #### Diagrama de Arquitetura
 
-<!-- Não há PNG específico, manter vazio ou adicionar se houver -->
+![Diagrama de Arquitetura](Artifacts/png/Diagrama%20de%20arquitetura.png)
 
 ### 3.2 Diagrama de Componentes e Implantação
 
 #### Diagrama de Componentes
 
-<!-- Não há PNG específico, manter vazio ou adicionar se houver -->
+![Diagrama de Componentes](Artifacts/png/Diagrama%20de%20componentes.png)
 
 #### Diagrama de Implantação
 
-<!-- Não há PNG específico, manter vazio ou adicionar se houver -->
+![Diagrama de implantação](Artifacts/png/Diagrama%20de%20implantacao.png)
 
 ### 3.3 Diagrama de Classes
 
 #### Diagrama de Classes
 
-![Diagrama de Classes](Artifacts/png/Diagrama de classe.png)
+![Diagrama de Classes](Artifacts/png/Diagrama%20de%20classe.png)
 
 ### 3.4 Diagramas de Sequência
 
 #### Cadastro de Evento
 
-<!-- Não há PNG específico, manter vazio ou adicionar se houver -->
+![Diagrama de sequencia cadastro de evento](Artifacts/png/Diagrama%20de%20sequencia%20cadastro%20de%20evento.png)
 
 #### Aprovação de Evento
 
-<!-- Não há PNG específico, manter vazio ou adicionar se houver -->
+![Diagrama de sequencia aprovação de evento](Artifacts/png/Diagrama%20de%20sequencia%20aprovacao%20de%20evento.png)
 
 ### 3.5 Diagramas de Comunicação
 
 #### Comunicação entre usuário e sistema para busca e inscrição
 
-<!-- Não há PNG específico, manter vazio ou adicionar se houver -->
+![Diagrama de comunicação](Artifacts/png/Diagrama%20de%20Comunicação.png)
 
 ### 3.6 Diagramas de Estados
 
 #### Estado do Evento:
 
-<!-- Não há PNG específico, manter vazio ou adicionar se houver -->
+![Diagrama de evento](Artifacts/png/Diagrama%20de%20evento.png)
 
 ### 4. Modelos de Dados
 

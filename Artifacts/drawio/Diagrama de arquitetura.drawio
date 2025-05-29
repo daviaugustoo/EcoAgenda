@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0" version="27.1.1">
+  <diagram name="Implantação - Web, Mobile, API" id="implantacao123">
+    <mxGraphModel dx="1331" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UsuarioNode" value="Usuário" style="swimlane;html=1;" parent="1" vertex="1">
+          <mxGeometry x="114" y="260" width="180" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Web" value="Web" style="shape=rectangle;rounded=1;whiteSpace=wrap;html=1;" parent="UsuarioNode" vertex="1">
+          <mxGeometry x="50" y="50" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Mobile" value="Mobile" style="shape=rectangle;rounded=1;whiteSpace=wrap;html=1;" parent="UsuarioNode" vertex="1">
+          <mxGeometry x="50" y="120" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ServidorNode" value="Servidor" style="swimlane;html=1;" parent="1" vertex="1">
+          <mxGeometry x="344" y="295" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="API" value="API REST" style="shape=rectangle;rounded=1;whiteSpace=wrap;html=1;" parent="ServidorNode" vertex="1">
+          <mxGeometry x="40" y="50" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DB" value="Banco de Dados" style="shape=cylinder;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="570" y="335" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WebToAPI" style="endArrow=block;html=1;" parent="1" source="Web" target="API" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MobileToAPI" style="endArrow=block;html=1;" parent="1" source="Mobile" target="API" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="APItoDB" style="endArrow=block;html=1;" parent="1" source="API" target="DB" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
