@@ -1,0 +1,45 @@
+Table usuarios {
+  id SERIAL [pk]
+  nome VARCHAR(100) [not null]
+  email VARCHAR(100) [unique, not null]
+  senha VARCHAR(255) [not null]
+  tipo VARCHAR(20) [not null, note: 'Valores: comum, organizador, admin']
+  data_criacao TIMESTAMP [default: `CURRENT_TIMESTAMP`]
+  ativo BOOLEAN [default: true]
+}
+
+Table eventos {
+  id SERIAL [pk]
+  nome VARCHAR(100) [not null]
+  data TIMESTAMP [not null]
+  local VARCHAR(200) [not null]
+  categoria VARCHAR(50) [not null]
+  descricao TEXT
+  vagas INTEGER
+  status VARCHAR(20) [not null, note: 'Valores: pendente, aprovado, realizado, cancelado']
+  organizador_id INTEGER [ref: > usuarios.id]
+  data_criacao TIMESTAMP [default: `CURRENT_TIMESTAMP`]
+}
+
+Table inscricoes {
+  id SERIAL [pk]
+  usuario_id INTEGER [ref: > usuarios.id]
+  evento_id INTEGER [ref: > eventos.id]
+  data_inscricao TIMESTAMP [default: `CURRENT_TIMESTAMP`]
+  status VARCHAR(20) [not null, note: 'Valores: solicitada, confirmada, concluida, cancelada']
+  indexes {
+    (usuario_id, evento_id) [unique]
+  }
+}
+
+Table avaliacoes {
+  id SERIAL [pk]
+  usuario_id INTEGER [ref: > usuarios.id]
+  evento_id INTEGER [ref: > eventos.id]
+  nota INTEGER [not null, note: 'Entre 1 e 5']
+  comentario TEXT
+  data TIMESTAMP [default: `CURRENT_TIMESTAMP`]
+  indexes {
+    (usuario_id, evento_id) [unique]
+  }
+}
